@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyWebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyWebApp.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="headerBody">
+                <h1 class="headerInner">Brooklyn Public Library</h1>                 
+                    <nav class="headerMenu">
+                        <ul class="headerList">
+                            <li>
+                                <a href="#about" class="headerLink"><h1 class="white">About</h1></a>
+                            </li>
+                            <li>
+                            <a href="#favorites" class="headerLink"><h1 class="white">Favourites</h1></a>
+                            </li>
+                            <li>
+                            <a href="#coffee" class="headerLink"><h1 class="white">Coffee Shop</h1></a>
+                            </li>
+                            <li>
+                            <a href="#library" class="headerLink"><h1 class="white">Library Card</h1></a>
+                            </li>
+                            <li>
+                            <a href="#contacts" class="headerLink"><h1 class="white">Contacts</h1></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="headerLogo">
+                        <img src="./assets/ico/icon-profile.svg" alt="logo">
+                    </a>
+                </div>
+        </div>
+    </header>
+    
+        <main>
+            <section class="welcome">
+                <h3>
+                    Welcome
+                    <br>
+                    to the Brooklyn
+                    <br>
+                    Library
+                </h3>
+            </section>
+            <section class="about" id="about">
+                <h2 class="sectionTitle">About</h2>
+                <hr style="max-width: 1440px; width: 100vw; margin: 0 auto;">
+                <p class="about-intro">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside.</p>
+                <div class="bodyContainer">
+                    <div class="wrapper">
+                        <i class="arrow left"></i>
+                        <div class="carousel">
+                            <img src="/assets/img/about1.png"
+                                 alt="about1"
+                                 id="about1"
+                                 class="about1">
+                        <img src="/assets/img/about2.png"
+                                 alt="about2"
+                                 id="about2"
+                                 class="about2">
+                        <img src="/assets/img/about3.png"
+                                 alt="about3"
+                                 id="about3"
+                                 class="about3">
+                        <img src="/assets/img/about4.png"
+                                 alt="about4"
+                                 id="about4"
+                                 class="about4">
+                        <img src="/assets/img/about5.png"
+                                 alt="about5"
+                                 id="about5"
+                                 class="about5">
+                        </div>
+                        <i class="arrow right"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="favorites" id="favorites">
+                <h2 class="sectionTitle">Favorites</h2>
+                <hr>
+                <p style="font-family: 'Inter', sans-serif; font-weight: bold; font-size: 20px; padding: 40px 20px 20px 0px;">
+                    Pick favorites of season
+                </p>
+                <div class="seasons">
+                    <label>
+                        <input class="button">
+                        <span class="check"></span>
+                        <span class="text">Winter</span>
+                    </label>
+                    <label>
+                        <input class="button">
+                        <span class="check"></span>
+                        <span class="text">Spring</span>
+                    </label>
+                    <label>
+                        <input class="button">
+                        <span class="check"></span>
+                        <span class="text">Summer</span>
+                    </label>
+                    <label>
+                        <input class="button">
+                        <span class="check"></span>
+                        <span class="text">Autumn</span>
+                    </label>
+                </div>
+                <div class="pictures">
+                    <div class="picturesItem">
+                        <div class="picturesPosition">
+                            <h5 class="picturesTitle">Staff Picks</h5>
+                            <hr>
+                            <p class="book">The Book Eaters</p>
+                            <p class="author">By Sunyi Dean</p>
+                            <p class="mean">
+                                An unusual sci-fi story about a book eater woman who tries desperately to save
+                                her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional
+                                family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint
+                                of heart.
+                            </p>
+                            <div class="cover">
+                                <img src="./assets/img/eaters.png" alt="The Book Eaters">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="picturesItem">
+                        <div class="picturesPosition">
+                            <h5 class="picturesTitle">Staff Picks</h5>
+                            <hr>
+                            <p class="book">Cackle</p>
+                            <p class="author">By Rachel Harrison</p>
+                            <p class="mean">
+                                Are your Halloween movies of choice The Witches of Eastwick and Practical Magic?
+                                Look no further than here - where a woman recovering from a breakup moves to a quaint town
+                                in upstate New York and befriends a beautiful witch.
+                            </p>
+                            <div class="cover">
+                                <img src="./assets/img/cackle.png" alt="Cackle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="picturesItem">
+                        <div class="picturesPosition">
+                            <h5 class="picturesTitle">Staff Picks</h5>
+                            <hr>
+                            <p class="book">Dante: Poet of the Secular World</p>
+                            <p class="author">By Erich Auerbach</p>
+                            <p class="mean">
+                                Auerbach's engaging book places the 'Comedy' within the tradition of epic,
+                                tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the
+                                individual and his drama of soul into something of divine significance — an inspired
+                                introduction to Dante's main themes.
+                            </p>
+                            <div class="cover">
+                                <img src="./assets/img/dante.png" alt="Dante">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="picturesItem">
+                        <div class="picturesPosition">
+                            <h5 class="picturesTitle">Staff Picks</h5>
+                            <hr>
+                            <p class="book">The Last Queen</p>
+                            <p class="author">By Clive Irving</p>
+                            <p class="mean">
+                                A timely and revelatory new biography of Queen Elizabeth (and her family)
+                                exploring how the Windsors have evolved and thrived as the modern world has changed around
+                                them.
+                            </p>
+                            <div class="cover">
+                                <img src="./assets/img/queen.png" alt="The Last Queen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="coffee" id="coffee">
+                <h2 class="sectionTitle">Coffee Shop</h2>
+                <hr>
+                <p style="line-height: 40px; padding: 40px 10px 0px; font-size: 20px; letter-spacing: 2px;">
+                    In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and
+                    friendly
+                    conversation.
+                    <br>
+                    You can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also
+                    you can try desserts from bakery.
+                </p>
+                <div class="coffeeContainer">
+                    <div class="coffeeTea">
+                        <h3>Coffee & Tea</h3>
+                        <div class="menuItem">
+                            <p class="drinks">Cold Brew Coffee</p>
+                            <div class="line"></div>
+                            <p class="price">$3</p>
+                        </div>
+                        <div class="menuItem">
+                            <p class="drinks">French Press Pot</p>
+                            <div class="line"></div>
+                            <p class="price">$5</p>
+                        </div>
+                        <div class="menuItem">
+                            <p class="drinks">Espresso</p>
+                            <div class="line"></div>
+                            <p class="price">$2</p>
+                        </div>
+                        <div class="menuItem">
+                            <p class="drinks">Cappuccino</p>
+                            <div class="line"></div>
+                            <p class="price">$4</p>
+                        </div>
+                        <div class="menuItem">
+                            <p class="drinks">Hot Tea</p>
+                            <div class="line"></div>
+                            <p class="price">$2</p>
+                        </div>
+                        <div class="menuItem">
+                            <p class="drinks">Cold Tea</p>
+                            <div class="line"></div>
+                            <p class="price">$2</p>
+                        </div>
+                    </div>
+                    <div class="dessertsCakes">
+                        <h3>Desserts & Cakes</h3>
+                        <div class="menuItem">
+                            <p class="meals">Forest Gateau</p>
+                            <div class="line"></div>
+                            <p class="price">$16</p>
+                        </div>
+                        <div class="menuItem">
+                            <p class="meals">Blue Moon</p>
+                            <div class="line"></div>
+                            <p class="price">$16</p>
+                        </div>
+                        <div class="menuItem">
+                            <p class="meals">Truffle Cake</p>
+                            <div class="line"></div>
+                            <p class="price">$16</p>
+                        </div>
+                        <div class="menuItem">
+                            <p class="meals">Chocolate Cake</p>
+                            <div class="line"></div>
+                            <p class="price">$18</p>
+                        </div>
+                        <div class="menuItem">
+                            <p class="meals">Poet Dream Cake</p>
+                            <div class="line"></div>
+                            <p class="price">$16</p>
+                        </div>
+                        <div class="menuItem">
+                            <p class="meals">Pineapple Cake</p>
+                            <div class="line"></div>
+                            <p class="price">$14</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <h2 class="sectionTitle">Our Contacts</h2>
+                <hr>
+                <div class="contactsContainer">
+                    <div class="contactsInfo">
+                        <p class="contactsInner">For All Library Inquiries:</p>
+                        <p class="text">
+                            Please Call
+                            <a class="text" href="tel:+16177302370">(617) 730-2370</a>
+                        </p>
+                        <p class="text">
+                            For TTY Service, Please Call
+                            <a class="text" href="tel:+16177302370">
+                                (617)
+                                730-2370
+                            </a>
+                        </p>
+                        <p class="text">
+                            Putterham Library:
+                            <a class="text" href="tel:+16177302385">(617) 730-2385</a>
+                        </p>
+                        <p class="contactsInner">Senior Staff</p>
+                        <p class="text">
+                            Library Director:
+                            <a class="contactsInner" href="mailto:AmandaHirst@gmail.com">
+                                Amanda
+                                Hirst
+                            </a>
+                        </p>
+                    </div>
+                    <img src="./assets/img/map.png" alt="map">
+                </div>
+            </section>
+            <section class="cards" id="library">
+                <h2 class="sectionTitle">Digital Library Cards</h2>
+                <hr>
+                <div class="cardsContainer">
+                    <div class="checkContainer">
+                        <h3>Find your Library card</h3>
+                        <form action="#">
+                            <div class="formInner">
+                                <h4>Brooklyn Public Library</h4>
+                                <p>
+                                    <input name="login" placeholder="Reader's name" class="formControl">
+                                </p>
+                                <p>
+                                    <input type="password"
+                                           name="pass"
+                                           placeholder="Card number"
+                                           class="formControl">
+                                </p>
+                            </div>
+                            <button type="submit">Check the card</button>
+                        </form>
+                    </div>
+                    <div class="getCard">
+                        <h4 class="cardTitle">Get a reader card</h4>
+                        <p>
+                            You will be able to see a reader card after logging into account or you can register a new
+                            account
+                        </p>
+                        <div class="buttonWrapper">
+                            <button class="getButton">Sigh Up</button>
+                            <button class="getButton">Log In</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <script src="/library/index.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css">
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <div class="frame">
+                <div class="frameUp">
+                    <a class="frameLeft" href="https://github.com/EmiliaVatslavovna">EmiliaVatslavovna</a>
+                    <h3 class="frameRight">
+                        Mon - Fri
+                        <br>
+                        08:00 am - 07:00 pm
+                    </h3>
+                </div>
+                <div class="frameDown">
+                    <div class="icons">
+                        <a href="https://twitter.com">
+                            <img src="./assets/ico/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="https://instagram.com">
+                            <img src="./assets/ico/instagram.svg" alt="instagram">
+                        </a>
+                        <a href="https://facebook.com">
+                            <img src="./assets/ico/facebook.svg" alt="facebook">
+                        </a>
+                    </div>
+                    <h3 class="frameRight">
+                        Sat - Sun
+                        <br>
+                        10:00 am - 06:00 pm
+                    </h3>
+                   
+                </div>
+            </div>
+            <hr>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
