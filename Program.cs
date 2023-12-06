@@ -1,4 +1,13 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+using MyWebApp.Data;
+
+var builder = WebApplication.CreateBuilder();
+
+// получаем строку подключения из файла конфигурации
+string connection = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// добавляем контекст AppDbContext в качестве сервиса в приложение
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connection));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -1,13 +1,5 @@
 {
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
-    }
-  },
-  "AllowedHosts": "*",
   "ConnectionStrings": {
-    "DefaultConnection": "Server=DESKTOP-TU7H6VS\\SQLEXPRESS;Database=webapp;Trusted_Connection=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=DESKTOP-TU7H6VS\\SQLEXPRESS;Database=webapp;Trusted_Connection=True;"
   }
-
 }
